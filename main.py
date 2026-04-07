@@ -1,6 +1,22 @@
-def main():
-    print("Hello from git-test!")
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "Welcome to my Flask app!"
+
+@app.route('/hello')
+def hello():
+    return '<p>Hello, Mr Oluwole DevOps, Cloud Engineer and GenAiOps!</p>'
+
+if __name__ == '__main__':
+    app.run(debug=True)
+            
 
 
-if __name__ == "__main__":
-    main()
+
+
+
+
+
