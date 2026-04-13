@@ -10,9 +10,14 @@ def home():
 def hello():
     return '<p>Hello, Mr Oluwole DevOps, Cloud Engineer and GenAiOps!</p>'
 
+@app.route('/About')
+def about():
+    return '<p>This is the About page for my Flask app.</p>'
+
 if __name__ == '__main__':
     #app.run(debug=True)
     app.run(host='0.0.0.0', port=5000)
+
 
 
 
