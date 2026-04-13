@@ -15,7 +15,7 @@ def about():
     return '<p>This is the About page for my Flask app.</p>'
 
 if __name__ == '__main__':
-    #app.run(debug=True)git
+    app.run(debug=True)
     app.run(host='0.0.0.0', port=5000)
 
 
