@@ -18,7 +18,6 @@ if __name__ == '__main__':
     app.run(debug=True)
     app.run(host='0.0.0.0', port=5000)
 
-
-
-
-
+@app.route('/contact')
+def contact():
+    return '<p>This is the Contact page for my Flask app.</p>'
